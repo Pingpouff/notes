@@ -1,0 +1,37 @@
+TODO
+	spec
+		voir les fichiers *.md
+
+A voir
+	e-neos
+		import e-neos à lancer au moment du calcul?
+		quel format doit on recup de la plateforme? Json? XML? PDF?
+
+TO mickael
+	facture
+		police trop lourd
+			insérer uniquement les carac utilisés? possible pour jasper?
+		on doit ajouter deux boutons
+			sauvegarder comme valeur par défaut (qui sauvegarde dans la facturation)
+			charger valeur par défaut qui charge les valeurs de la facturation et les ajoute au formulaire
+		le bouton sauvegarder classique qui sauvegarde sur la facture (capture facturation de la facture)
+		l'édition du rôle meter doit comprendre un nombre de ligne variable en fonction du nombre de tarif
+			contrairement à bill il sera donc sous forme d'un xls
+
+TO SPRINT
+	import/export ORMC a ajouter au S9
+	export PDF global (clic'esy) à reporter dans le S10 voir V2
+	editer la ficher abonnée compteur à reporter dans le S10
+
+	
+TO DO
+	facture afficher les reports dans la facture
+
+To BBE
+	https://extranet.artal.fr/jira-ng/browse/AGD-1470
+
+to vba voir affichage adresse
+
+to jso
+	ajouter message personnalisé, propre à la FI, qui vient surcharger le message
+	=> noté dans la tache d'édition de facture individuelle

@@ -1,0 +1,66 @@
+notes 09/07/2018
+
+entrées AGEDI
+    jeu de données:
+        nouvelle gamme: données métier => dump bd
+        ancienne gamme installation sur la VM de Mickaël
+    serveur
+        NOVA
+            monté de version à faire chez agedi
+            côté Artal pas de changement sur l'utilisation de nova sur le serveur de preprod
+        NOVA GED = nuxeo
+            GED de paye compta
+    documentation
+        wiki agedi mise à dispo?
+        nuxeo doc au format altran
+        utilisation de jira artal possible si export (sous format rapport ou dump) livré à agedi
+    packaging
+        deb
+            war independant
+                exclusion de core comme dependance deb
+    gilab
+        ansible
+            scripts (attention linux only)
+                recup front + back, compile 
+                reset base de données + reset (posgis et tout)
+
+    données d'init
+        paye compta utilise le service d'init java?
+
+contexte
+    octobre => "pas de panique"
+    capitalisation dans core faite côté agedi
+        novaged
+        spring security => noveaux profils
+    différences de code
+        pas mal pour le backend
+    differences de lib
+        quelques unes surtout côté back
+    archi altran très lourde => prés à troquer du fonctionnel pour payer la dette techinique
+contexte technique
+    gitlab
+        sub group par module
+            sub group back/front
+                au moins un projet par sub group (back essentiellement)
+
+code
+    totem: outils de controler dgcep
+    accounting-payroll
+        a chaque entity son DTO + dto builder
+        tous les controller à la main
+        gestion des exception centralisé dans accountingRules
+        vue postgres sur certain cas
+        l'utilisation de projection se fait toujours en utilisant excerp sur une proj
+        même pratique sur paye et compta (diff de package)
+        donnée d'init hors service d'init => script sql
+        insertion de sql depuis le java dans le InstitutionServiceImpl (beurk)
+front
+    globalize (déclaré en .run() => artal ne fait pas ça)
+    payroll
+        restangular data service
+    accounting
+        $http service
+    offset ajouté pour avoir des colonnes vides (bootstrap sur 10 plutot que sur 12 surement fait par Adrien)
+    les nouveautés se font sur les pratiques Artal
+    R&D => lazy loading des modules front
+

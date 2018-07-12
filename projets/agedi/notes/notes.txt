@@ -1,0 +1,3 @@
+bower: gestionnaire de dépendences (souvent pour les dépendences runtime)
+gulp: task runner
+npm: gestionnaire de dépendences (souvent pour les dépensences de build)

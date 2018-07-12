@@ -1,0 +1,10 @@
+notes-audio
+
+facturation ex: cantine
+element ex: enfant, client
+gestion par période
+	début - fin pour chaque element de facture pour "proratiser"
+mode de paiement
+	prélèvement
+	mensualisation
+	classique

@@ -1,0 +1,66 @@
+core
+	code produit national
+		heritage spécifique dans bill et common, pour pouvoir être enrichi par module.
+	siretcpp
+		
+bill-common
+	facturation: elements factures (cantine, garderie scolaire)
+	param facturation
+		multiLoc?
+		min de facturation
+			pas de min (on facture dés que c'est non null)
+			facture non établie si montant inférieur à XXXX€ (zéro si inf)
+			facture non établie si montant inférieur à XXXX€ avec gestion (report) de solde (à ajouter à la prochaine facturation)
+			minumum toujours faturé (si facture)
+		factPeriode: active le mode propratisé: début - fin pour chaque element de facture pour "proratiser"
+	localité
+	collectivité
+	code produit local
+		code généré par la DGFIP mais maj par la collectivité
+		il pointe vers le ou les tarifs
+	code service
+		srevice de compatibilité (regroupe des produits ?)
+	TVA: liste des taux de TVA
+		notion
+			temporelle (normalement par année)
+			geolocalisé (polynésie != france)
+	mentions
+		label reglementaire à afficher sur les facture
+		peut dépendre du mode de paiement
+	tiers: personne physique ou morale qui peut être facturé
+	message personnalisé: message perso à afficher sur une facture pour un usager
+		à afficher:
+			jamais
+			seulement sur la prochaine
+			sur toutes les suivantes
+	solde/report (si compatible avec le param minimum de facturation)
+		définie le reste à payer (non facturé)
+	facture
+		factorisation des éléments commun entre fact et compteur ?
+	historique des actions
+	assistant: configuration de wizard d'aide
+		lié à
+			0N facturation
+			0N étapes
+	etape de l'assistant
+	document: archive?
+	role
+		lot de facture
+		
+		
+		
+		
+		
+
+		
+money-collection
+bill
+	usager: correspond plus ou moins à la notion de tier
+		il est lier à un tier principal et tous les autres co débiteur
+	tarif
+	modele: regroupement de tarif
+	regroupement de modele
+	regroupement de tarif
+	regroupement d'element
+	element: element facturé
+meter
