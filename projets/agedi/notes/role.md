@@ -87,7 +87,7 @@ Cette action est disponible uniquement pour l'opérateur AGEDI.
 Cette action est enregistrée dans le journal des manipulations.
 Un message de validation permet de valider et lancer l'action.
 - efface tout l'échéancier? On revient dans l'état ou l'on recommence un nouveau cycle? ie on renseigne la date de première échéance?
-=> oui
+=> oui et on supprime aussi les acomptes
 - peut on faire l'annulation si la première échéance a été traité?
 => oui
 
@@ -112,15 +112,15 @@ Un message de validation permet de valider et lancer l'action.
         - facturer le role
             - création d'un acompte pour chaque contrat
                 - acompte modifiable? annulable? (comme report?)
-            - acomptes consultables?
+            - acomptes consultables? non c'est compris dans l'algo de l'échéancier. Attention de bien supprimer les acomptes lors de l'annulation d'un cycle
 - création rôle 1
-    - détecter que l'on est sur le rôle 1 ()
-        - date de prélèvement déjà fixé
-        - selection des contrats déjà fixé ?
-            - sauf exclusion des nouveaux en FI ?
-            - ajout de nouveaux ?
-        - montants déjà fixé?
-            - recalcul possible ?
+    - détecter que l'on est sur le rôle 1 
+        - date de prélèvement déjà fixéen allant voir l'objet Avancement de la facturation en cours
+        - selection des contrats déjà fixé ? oui
+            - sauf exclusion des nouveaux en FI ? pas de FI mais il y a en a qui sont exclus de l'échéancier 
+            - ajout de nouveaux ? non
+        - montants déjà fixé? oui lors de la création de l'échéancier (au moment de la création du role 0)
+            - recalcul possible ? oui,recalcul global = regul prévu sur un role de l'échéancier et recalcul par usager
             - reporter modifier une échéance => chaque contrat doit porter son échéancier
             - annulé une échéance passé ? (qu'est ce que ça veut dire?)
 - consulter échéancier global
