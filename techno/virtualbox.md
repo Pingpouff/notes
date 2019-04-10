@@ -1,4 +1,4 @@
-Pour augmenter la taille d'un disque de taille fixe il faut faire les étapes suivantes:
+# Pour augmenter la taille d'un disque de taille fixe il faut faire les étapes suivantes:
 
 - cloner un disque en creant une copie avec taille dynamique
 `.\VBoxManage.exe  clonemedium disk "C:\Users\dias\VirtualBox VMs\agri-factory\agri-factory.vdi" "C:\Users\dias\VirtualBox VMs\agri-factory\b-up\agri-factory-dyn.vdi" -variant Standard`
