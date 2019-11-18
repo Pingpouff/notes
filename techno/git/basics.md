@@ -32,12 +32,12 @@
 > git checkout -b feature/nom_de_branche
 ```
 
-####2.2. Créer la branche sur le serveur et push
+#### 2.2. Créer la branche sur le serveur et push
 ```sh
 > git push -u origin feature/nom_de_branche
 ```
 
-####2.3. Créer une branche en local à partir d'une branche présente sur le serveur
+#### 2.3. Créer une branche en local à partir d'une branche présente sur le serveur
 ```sh
 > git checkout -b nom_branche_locale origin/nom_branche_serveur
 ```
@@ -48,7 +48,7 @@
 > git config core.autocrlf true
 ```
 
-####3.2 Change la config des retours en global pour  qu'ils soient linux
+#### 3.2 Change la config des retours en global pour  qu'ils soient linux
 ```sh
 > git config --global core.autocrlf false
 ```
@@ -72,7 +72,7 @@
 > git config --global difftool.p4merge.cmd "C:/Program\ Files/Perforce/p4merge.exe \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\""
 ```
 
-###6. Submodules management
+### 6. Submodules management
 ```sh
 > git submodule update --init --recursive
 ```
