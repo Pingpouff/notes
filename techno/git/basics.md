@@ -3,9 +3,9 @@
 #### Difference des fichiers locaux avec le repo:
 ```sh
 > git diff origin/develop
-```#
+```
 
-####Commit locaux:
+#### Commit locaux:
 ```sh
 > git log origin/develop
 ```
