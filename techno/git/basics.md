@@ -10,7 +10,7 @@
 > git log origin/develop
 ```
 
-###1. Tester le code de la conf en créant une nouvelle branche
+### 1. Tester le code de la conf en créant une nouvelle branche
 #### 1.1 Créer une nouvelle branche à partir de ma branche locale (avec commit) et bascule dessus.
 ```sh
 > git checkout -b leNomDeMaBrancheDeTest
