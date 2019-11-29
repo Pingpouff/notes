@@ -81,3 +81,7 @@
 ```sh
 > git update-index --skip-worktree <filepath>
 ```
+```sh
+>  git update-index --skip-worktree  .idea/modules.xml agedi-java/.idea/codeStyles/Project.xml agedi-java/.idea/compiler.xml agedi-java/.idea/misc.xml agedi-java/.idea/modules.xml agedi-java/env/pom.xml agedi-java/module/core/src/main/resources/config/application.yml agedi-javascript/src/app/common/config.json
+```
+
